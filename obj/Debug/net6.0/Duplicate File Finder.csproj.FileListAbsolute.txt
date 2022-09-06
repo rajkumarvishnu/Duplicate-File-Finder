@@ -1,0 +1,15 @@
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/bin/Debug/net6.0/Duplicate File Finder
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/bin/Debug/net6.0/Duplicate File Finder.deps.json
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/bin/Debug/net6.0/Duplicate File Finder.runtimeconfig.json
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/bin/Debug/net6.0/Duplicate File Finder.dll
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/bin/Debug/net6.0/Duplicate File Finder.pdb
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/Duplicate File Finder.csproj.AssemblyReference.cache
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/Duplicate File Finder.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/Duplicate File Finder.AssemblyInfoInputs.cache
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/Duplicate File Finder.AssemblyInfo.cs
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/Duplicate File Finder.csproj.CoreCompileInputs.cache
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/Duplicate File Finder.dll
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/refint/Duplicate File Finder.dll
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/Duplicate File Finder.pdb
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/Duplicate File Finder.genruntimeconfig.cache
+/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/obj/Debug/net6.0/ref/Duplicate File Finder.dll

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duplicate File Finder", "Duplicate File Finder.csproj", "{DAA1E7F0-4566-4812-A78E-B8EA0C3A3F2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAA1E7F0-4566-4812-A78E-B8EA0C3A3F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA1E7F0-4566-4812-A78E-B8EA0C3A3F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA1E7F0-4566-4812-A78E-B8EA0C3A3F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA1E7F0-4566-4812-A78E-B8EA0C3A3F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E0F7703-5303-40EA-97D7-8ED6F208A107}
+	EndGlobalSection
+EndGlobal
