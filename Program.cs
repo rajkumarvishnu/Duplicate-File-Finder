@@ -35,7 +35,6 @@ public class RecursiveFileProcessor
     public static void Main(string[] args)
     {
         Console.WriteLine("Starting...");
-
         List<string> paths = new List<string>();
         paths.Add("/Users/vishnurajkumar/Pictures/Archive");
         foreach (var item in args)
