@@ -31,6 +31,7 @@ public class RecursiveFileProcessor
 {
     public static List<FileInformation> FI = new List<FileInformation>();
     public static List<Duplicate> Dups = new List<Duplicate>();
+
     public static void Main(string[] args)
     {
         Console.WriteLine("Starting...");
