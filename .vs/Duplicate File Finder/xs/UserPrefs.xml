@@ -1,3 +1,27 @@
 ﻿<Properties StartupConfiguration="{DAA1E7F0-4566-4812-A78E-B8EA0C3A3F2F}|Default">
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/Program.cs" relfile="Program.cs" line="103" column="1" />
+      <Breakpoint file="/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/Program.cs" relfile="Program.cs" line="102" column="1" />
+      <Breakpoint file="/Users/vishnurajkumar/Downloads/Expendable Projects/Duplicate File Finder/Program.cs" relfile="Program.cs" line="115" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Duplicate_220File_220Finder PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="102" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Duplicate File Finder" expanded="True">
+            <Node name="Duplicate File Finder" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>

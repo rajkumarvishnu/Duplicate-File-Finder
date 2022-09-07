@@ -12,11 +12,19 @@ public class FileInformation
     public DateTime creationtime { get; set; }
 }
 
+public static class Constants
+{
+    public const int one_mb = 1048576;
+    public const long filter_size = one_mb * 5;
+    public const long filter_size_in_MBs = filter_size / one_mb;
+}
+
 public class Duplicate
 {
     public string filename { get; set; }
     public int count { get; set; }
     public List<string> paths { get; set; }
+    public long size { get; set; }
 }
 
 public class RecursiveFileProcessor
@@ -29,7 +37,7 @@ public class RecursiveFileProcessor
         Console.WriteLine("Starting...");
 
         List<string> paths = new List<string>();
-        paths.Add("/Users/vishnurajkumar/Documents");
+        paths.Add("/Users/vishnurajkumar/Pictures/Archive");
         foreach (var item in args)
         {
             Console.WriteLine(item);
@@ -67,7 +75,7 @@ public class RecursiveFileProcessor
     {
         foreach (var item in FI)
         {
-            Console.WriteLine("Looking for duplicates - " + item.filename);
+            //  Console.WriteLine("Looking for duplicates - " + item.filename);
             var potentialduplicates = FI.FindAll(
                 x =>
                     x.filename == item.filename
@@ -89,6 +97,7 @@ public class RecursiveFileProcessor
                     }
                     d.filename = potentialduplicates.FirstOrDefault().filename;
                     d.count = potentialduplicates.Count;
+                    d.size = d.size + potentialduplicates.FirstOrDefault().size;
                     Dups.Add(d);
                 }
                 /*
@@ -99,12 +108,27 @@ public class RecursiveFileProcessor
                 */
             }
         }
-        var g = Dups;
+        // var g = Dups;
         //Console.ReadKey();
         Console.WriteLine("_____________________________________________________");
         foreach (var duplicate in Dups)
         {
-            Console.WriteLine(duplicate.filename + "  [" + duplicate.count + "]");
+            Console.WriteLine(
+                duplicate.filename
+                    + "  ["
+                    + duplicate.count
+                    + "] copies. "
+                    + " Total size occupied - ["
+                    + (duplicate.size / Constants.one_mb) * duplicate.paths.Count
+                    + " MB] "
+                    + " \nCan be reduced to ["
+                    + (duplicate.size / Constants.one_mb)
+                    + " MB] if the extra "
+                    + (duplicate.paths.Count - 1)
+                    + " copies are deleted"
+            );
+
+            Console.WriteLine("_____________________________________________________");
             foreach (var path in duplicate.paths)
             {
                 Console.WriteLine("---- " + path);
@@ -133,8 +157,9 @@ public class RecursiveFileProcessor
     // Insert logic for processing found files here.
     public static void ProcessFile(string path)
     {
-        Console.WriteLine("Processed file '{0}'.", path);
         long length = new System.IO.FileInfo(path).Length;
+        Console.WriteLine("Processed file '{0}' - size - '{1}'.", path, length / Constants.one_mb);
+
         FileInformation temp = new FileInformation();
         temp.creationtime = File.GetCreationTime(path);
         temp.path = path;
@@ -142,7 +167,16 @@ public class RecursiveFileProcessor
         temp.filename = Path.GetFileName(path);
 
         //Console.WriteLine(length);
-        FI.Add(temp);
+        if (temp.size >= Constants.filter_size)
+        {
+            FI.Add(temp);
+        }
+        else
+        {
+            Console.WriteLine(
+                "Skipped as file size is below req. - " + temp.size / Constants.one_mb + " MB"
+            );
+        }
         //return temp;
     }
 }
