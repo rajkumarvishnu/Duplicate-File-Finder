@@ -15,7 +15,7 @@ public class FileInformation
 public static class Constants
 {
     public const int one_mb = 1048576;
-    public const long filter_size = one_mb * 5;
+    public const long filter_size = one_mb * 1;
     public const long filter_size_in_MBs = filter_size / one_mb;
 }
 
@@ -36,7 +36,7 @@ public class RecursiveFileProcessor
     {
         Console.WriteLine("Starting...");
         List<string> paths = new List<string>();
-        paths.Add("/Users/vishnurajkumar/Pictures/Archive");
+        paths.Add("/Users/vishnurajkumar/Downloads");
 
         foreach (var item in args)
         {
